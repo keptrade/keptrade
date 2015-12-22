@@ -8,20 +8,20 @@
   </md-content>
 </div>
 <md-divider/>
-<div ng-controller="loginCtrl">
+<div ng-controller="loginCtrl as loginCtrl">
   <div>
-    <md-button ng-click ="loginAsFacebook()" class="md-raised">
-      <md-icon md-svg-src='/images/facebook.svg'></md-icon> | Login with Facebook
+    <md-button ng-click ="loginCtrl.loginAsFacebook()" class="md-raised">
+      <md-icon md-svg-src='images/facebook.svg'></md-icon> | Login with Facebook
     </md-button>
   </div>
   <div>
-    <md-button ng-click ="loginAsGoogle()" class="md-raised">
-      <md-icon md-svg-src='/images/google.svg'></md-icon> | Login with Google
+    <md-button ng-click ="loginCtrl.loginAsGoogle()" class="md-raised">
+      <md-icon md-svg-src='images/google.svg'></md-icon> | Login with Google
     </md-button>
   </div>
   <div>
-    <md-button ng-click ="loginAsGuest()" class="md-raised">
-      <md-icon md-svg-src='/images/guest.svg'></md-icon> | Login as Guest
+    <md-button ng-click ="loginCtrl.loginAsGuest()" class="md-raised">
+      <md-icon md-svg-src='images/guest.svg'></md-icon> | Login as Guest
     </md-button>
   </div>
 </div>
